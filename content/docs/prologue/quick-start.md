@@ -34,10 +34,10 @@ Not quite sure? Use the Doks child theme.
 
 #### Doks child theme
 
-{{< btn-copy text="git clone https://github.com/h-enk/doks-child-theme.git my-doks-site" >}}
+{{< btn-copy text="git clone https://github.com/h-enk/analytics-at-sauder.git my-doks-site" >}}
 
 ```bash
-git clone https://github.com/h-enk/doks-child-theme.git my-doks-site
+git clone https://github.com/h-enk/analytics-at-sauder.git my-doks-site
 ```
 
 #### Doks starter theme
