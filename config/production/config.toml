@@ -1,0 +1,2 @@
+baseurl = "https://analytics-at-sauder.netlify.app/"
+canonifyURLs = true
