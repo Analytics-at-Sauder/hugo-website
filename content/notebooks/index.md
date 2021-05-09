@@ -16,9 +16,6 @@ images: []
   h6 {font-size: 12px;}
   code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
   pre:not([class]) { background-color: white }
-  #linear-programming {
-    white-space: normal;
-  }
 </style>
 
 
@@ -74,7 +71,7 @@ images: []
             <div class="list-group">
               <a
                 class="list-group-item"
-                href="nb0001_stock_returns_analysis.html"
+                href="/notebook/finance"
                 >Stock Returns Analysis</a
               >
             </div>
@@ -94,7 +91,7 @@ images: []
           <div class="panel panel-default">
             <div class="panel-heading"><h4>Marketing</h4></div>
             <div class="list-group">
-              <a class="list-group-item" href="nb0015_conjoint_analysis.html"
+              <a class="list-group-item" href=""
                 >Conjoint Analysis</a
               >
               <a
