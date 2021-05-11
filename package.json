@@ -38,7 +38,7 @@
   },
   "devDependencies": {
     "@babel/cli": "^7.13",
-    "@babel/core": "^7.13",
+    "@babel/core": "^7.14",
     "@babel/preset-env": "^7.13",
     "@fullhuman/postcss-purgecss": "^4.0",
     "@hyas/doks": "^0.2",
@@ -60,8 +60,8 @@
     "purgecss-whitelister": "^2.4",
     "rimraf": "^3.0",
     "shx": "^0.3.3",
-    "standard-version": "^9.1",
+    "standard-version": "^9.3",
     "stylelint": "^13.12",
-    "stylelint-config-standard": "^21.0"
+    "stylelint-config-standard": "^22.0"
   }
 }
