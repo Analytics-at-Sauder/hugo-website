@@ -1,10 +1,10 @@
 # Meta Data for SEO
 
 ## Homepage
-title = "Doks"
+title = "Analytic@Sauder"
 titleSeparator = "-"
-titleAddition = "Modern Documentation Theme"
-description = "Doks is a Hugo theme helping you build modern documentation websites that are secure, fast, and SEO-ready — by default."
+titleAddition = "UBC Business Analytics Learning Resource"
+description = "The objective of this Project is to curate a collection of open-source business analytics tools and resources, to promote opportunities for hands-on learning, to foster an online, academic community of business analytics, and to facilitate conversations around data analytics within a broader business context. "
 
 ## Open Graph + Twitter Cards
 images = ["doks.png"]
@@ -52,7 +52,7 @@ editPage = true
   instantPage = true
   flexSearch = true
   darkMode = true
-  bootStrapJs = false
+  bootStrapJs = true
   breadCrumb = false
   highLight = true
   kaTex = false
