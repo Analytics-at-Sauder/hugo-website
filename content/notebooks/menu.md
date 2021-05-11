@@ -216,10 +216,10 @@ toc: false
             </div>
           </div>
         </div>
-        <div class="col-md-1 col-lg-6">
+        <div class="col-md-4 col-sm-6">
           <div class="panel panel-default">
             <div class="panel-heading">
-              <h4 id="linear-programming">Linear Programming/Optimization</h4>
+              <h4 id="linear-programming">Linear Programming & Optimization</h4>
             </div>
             <div class="list-group">
               <a class="list-group-item" href="nb0002_price_versioning.html"

@@ -26,7 +26,7 @@ pre = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" view
 url = "https://github.com/Analytics-at-Sauder/hugo-website"
 weight = 20
 
-# [[footer]]
-#   name = "Privacy"
-#   url = "/privacy-policy/"
-#   weight = 10
+[[footer]]
+name = "Privacy"
+url = "/privacy-policy/"
+weight = 10
