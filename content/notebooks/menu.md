@@ -1,11 +1,18 @@
 ---
-title: "Notebooks"
+title: "Browse Notebooks"
 description: ""
-date: 2021-04-15T00:02:08-07:00
-lastmod: 2021-04-15T00:02:08-07:00
+lead: ""
+date: 2020-11-17T20:11:42+01:00
+lastmod: 2020-11-17T20:11:42+01:00
 draft: false
 images: []
+menu:
+  notebooks:
+    parent: "all notebooks"
+weight: 010
+toc: false
 ---
+
 <style>
   h1 {font-size: 34px;}
   h1.title {font-size: 38px; margin-bottom: -30px;}
@@ -18,13 +25,6 @@ images: []
   pre:not([class]) { background-color: white }
 </style>
 
-
-
-
-
-<div>
-  <h2 stlye="maring-top: -10px">Browse Notebooks:</h2>
-</div>
 <div>
   <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
     <li class="nav-item" role="presentation">
@@ -71,7 +71,7 @@ images: []
             <div class="list-group">
               <a
                 class="list-group-item"
-                href="/notebook/finance"
+                href="/notebooks/finance"
                 >Stock Returns Analysis</a
               >
             </div>
