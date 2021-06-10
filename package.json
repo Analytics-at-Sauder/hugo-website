@@ -50,7 +50,7 @@
     "eslint": "^7.26",
     "flexsearch": "^0.6",
     "highlight.js": "^11.0",
-    "hugo-bin": "^0.71",
+    "hugo-bin": "^0.30.0",
     "instant.page": "^5.1",
     "katex": "^0.13.11",
     "lazysizes": "^5.3",
@@ -63,7 +63,7 @@
     "rimraf": "^3.0",
     "shx": "^0.3.3",
     "standard-version": "^9.3",
-    "stylelint": "^13.12",
-    "stylelint-config-standard": "^22.0"
+    "stylelint": "^9.3.0",
+    "stylelint-config-standard": "^18.3.0"
   }
 }
