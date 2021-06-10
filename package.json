@@ -16,6 +16,8 @@
   "scripts": {
     "init": "rimraf .git && git init -b main",
     "create": "hugo new",
+    "create:notebook": "node scripts/add-notebook.js",
+    "create:blog": "node scripts/add-post.js",
     "prestart": "npm run clean",
     "start": "hugo server --bind=0.0.0.0 --disableFastRender",
     "prebuild": "npm run clean",

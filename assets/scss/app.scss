@@ -9,7 +9,7 @@
 @import "bootstrap/scss/bootstrap";
 
 /** Import highlight.js */
-// @import "highlight.js/scss/dracula";
+@import "highlight.js/scss/github-dark";
 
 /** Import KaTeX */
 @import "katex/dist/katex";
@@ -18,7 +18,7 @@
 @import "common/fonts";
 @import "common/global";
 @import "common/dark";
-@import "components/doks";
+// @import "components/doks";
 // @import "components/syntax";
 @import "components/code";
 @import "components/alerts";
@@ -35,3 +35,4 @@
 @import "layouts/sidebar";
 
 @import "common/style-overrides";
+@import "custom";

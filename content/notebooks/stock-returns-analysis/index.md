@@ -9,6 +9,7 @@ toc: true
 menu:
   notebooks:
     parent: "notebooks"
+weight: 50
 ---
 
 #### Author: Kemjika Ananaba
@@ -18,25 +19,15 @@ In this Project, we will focus on using Python and Pandas to retrieve historical
 1. Perform primary analysis of stock returns
 2. Calculate key financial statistics or moments
 
-We encourage you to create your own Jupyter notebook and follow along. You can also download this notebook together with any affiliated data in the [Notebooks and Data](https://github.com/Master-of-Business-Analytics/Notebooks_and_Data) GitHub repository. Alternatively, if you do not have Python or Jupyter Notebook installed yet, you may experiment with a virtual notebook by launching Binder or Syzygy below (learn more about these two tools in the [Resource](https://analytics-at-sauder.github.io/resource.html) tab).
+We encourage you to create your own Jupytor notebook and follow along. You can also download this notebook together with any affiliated data in the [Notebooks and Data](https://github.com/Master-of-Business-Analytics/Notebooks_and_Data) GitHub repository. Alternatively, if you do not have Python or Jupyter Notebook installed yet, you may experiment with a virtual notebook by launching Binder or Syzygy below (learn more about these two tools in the [Resource](https://analytics-at-sauder.github.io/resource.html) tab).
 
-<div class="col text-center" style="margin-top:10px">
-    <a type="button" 
-            class="btn btn-primary" 
-            href="https://ubc.syzygy.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2FAnalytics-at-Sauder%2FNB0001_Stock_Returns_Analysis&urlpath=tree%2FNB0001_Stock_Returns_Analysis%2Fnb0001_stock_returns_analysis.ipynb&branch=master"
-            target="_blank">Launch Syzygy</a>
-</div>
-<div class="col text-center" style="margin-top:10px">
-    <a type="button" 
-            class="btn btn-primary" 
-            href="https://pims.syzygy.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2FAnalytics-at-Sauder%2FNB0001_Stock_Returns_Analysis&urlpath=tree%2FNB0001_Stock_Returns_Analysis%2Fnb0001_stock_returns_analysis.ipynb&branch=master"
-            target="_blank" style="">Launch Syzygy (Google)</a>   
-</div>
-<div class="col text-center" style="margin-top:10px"> 
-    <a class="btn btn-primary" 
-        href="https://mybinder.org/v2/gh/Analytics-at-Sauder/NB0001_Stock_Returns_Analysis/master?filepath=nb0001_stock_returns_analysis.ipynb" target="_blank" class="button">Launch Binder</a>
-</div>
-{{< highlight python >}}
+<a href="https://ubc.syzygy.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2FAnalytics-at-Sauder%2FNB0001_Stock_Returns_Analysis&urlpath=tree%2FNB0001_Stock_Returns_Analysis%2Fnb0001_stock_returns_analysis.ipynb&branch=master" target="_blank" class="button">Launch Syzygy (UBC)</a>
+
+<a href="https://pims.syzygy.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2FAnalytics-at-Sauder%2FNB0001_Stock_Returns_Analysis&urlpath=tree%2FNB0001_Stock_Returns_Analysis%2Fnb0001_stock_returns_analysis.ipynb&branch=master" target="_blank" class="button">Launch Syzygy (Google)</a>
+
+<a href="https://mybinder.org/v2/gh/Analytics-at-Sauder/NB0001_Stock_Returns_Analysis/master?filepath=nb0001_stock_returns_analysis.ipynb" target="_blank" class="button">Launch Binder</a>
+
+```python
 import pandas as pd
 from pandas_datareader import data as pdr
 import yfinance as yf
@@ -51,7 +42,7 @@ from pandas.util.testing import assert_frame_equal
 yf.pdr_override()
 pd.core.common.is_list_like = pd.api.types.is_list_like
 #The following line seems to be necessary due to a newer version of pandas
-{{< / highlight >}}
+```
 
 ## Business Problem
 
@@ -119,7 +110,7 @@ plt.legend(loc='center left', bbox_to_anchor=(1, 0.5))
 plt.show()
 ```
 
-![png](/images/nb0001_stock_returns_analysis_9_0.png)
+![png](output_9_0.png)
 
 ### Stock Return
 
@@ -199,7 +190,7 @@ plt.legend(loc='center left', bbox_to_anchor=(1, 0.5))
 plt.show()
 ```
 
-![png](nb0001_stock_returns_analysis_files/nb0001_stock_returns_analysis_16_0.png)
+![png](output_16_0.png)
 
 The line plot above does not reveal much with regards to variation in trends across the four stocks' prices over the observed one-year time frame. Instead, the return distributions below enable us to quickly determine the differences in the stocks' behaviours over the one-year period.
 
@@ -210,7 +201,7 @@ ret.hist(bins=50, sharex=True, figsize=(12,8))
 plt.show()
 ```
 
-![png](nb0001_stock_returns_analysis_files/nb0001_stock_returns_analysis_18_0.png)
+![png](output_18_0.png)
 
 The volatility of a stock is a measurement of the change in variance in the stock returns over a specific period of time. It is common to compare the volatility of one stock with the volatility of another; this is done in order to get a feel for which stocks have less risk. Comparing the volatility of a stock to the volatility of the market index is also common practice in order to understand the stock’s volatility relative to the overall market. Generally, the higher the stock's volatility, the riskier the investment in that stock, which is insightful for making investment decisions.
 
@@ -232,7 +223,7 @@ scatter_matrix(ret, diagonal='kde', alpha=0.8,figsize=(12,12))
 plt.show()
 ```
 
-![png](nb0001_stock_returns_analysis_files/nb0001_stock_returns_analysis_20_0.png)
+![png](output_20_0.png)
 
 A scatter plot is a visual representation of the correlation between two items. It is related to the correlation coefficient, as it is used to indicate whether or not a linear relationship exists between two variables. The scatter plots above illustrate that there is a positive relationship between each pair of stock returns. We can further create a correlation matrix, as below, to check if any pair of our four stocks are correlated.
 
@@ -242,7 +233,7 @@ sns.heatmap(ret.corr(), vmin=-1,cmap=sns.diverging_palette(20, 220, n=200), vmax
 plt.show()
 ```
 
-![png](nb0001_stock_returns_analysis_files/nb0001_stock_returns_analysis_22_0.png)
+![png](output_22_0.png)
 
 Based on the correlation matrix, each possible pair of stocks show a positive correlation in stock returns, with the stock returns of Amazon and Microsoft having the highest correlation.
 
