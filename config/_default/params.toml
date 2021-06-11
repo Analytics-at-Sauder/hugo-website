@@ -1,25 +1,25 @@
 # Meta Data for SEO
 
 ## Homepage
-title = "Analytic@Sauder"
+title = "Analytics@Sauder"
 titleSeparator = "-"
 titleAddition = "UBC Business Analytics Learning Resource"
 description = "The objective of this Project is to curate a collection of open-source business analytics tools and resources, to promote opportunities for hands-on learning, to foster an online, academic community of business analytics, and to facilitate conversations around data analytics within a broader business context. "
 
 ## Open Graph + Twitter Cards
 images = ["doks.png"]
-twitterSite = "henkverlinde"
-twitterCreator = "henkverlinde"
-facebookAuthor = "verlinde.henk"
-facebookPublisher = "verlinde.henk"
+twitterSite = "universityofbc"
+twitterCreator = "universityofbc"
+facebookAuthor = "universityofbc"
+facebookPublisher = "universityofbc"
 ogLocale = "en_US"
 
 ## JSON-LD
 schemaType = "Organization"
 schemaLogo = "logo-doks.png"
-schemaTwitter = "https://twitter.com/henkverlinde"
-schemaLinkedIn = "https://www.linkedin.com/in/henkverlinde/"
-schemaGitHub = "https://github.com/h-enk"
+schemaTwitter = "https://twitter.com/UBC"
+schemaLinkedIn = "https://www.linkedin.com/school/universityofbc"
+schemaGitHub = "https://github.com/Analytics-at-Sauder/k"
 schemaSection = "blog"
 
 ## Sitelinks Search Box
@@ -36,7 +36,7 @@ portraitPhotoWidths = [800, 700, 600, 500]
 lqipWidth = "20x"
 
 # Footer
-footer = "Powered by <a href=\"https://www.netlify.com/\">Netlify</a>, <a href=\"https://gohugo.io/\">Hugo</a>, and <a href=\"https://getdoks.org/\">Doks</a>"
+footer = "Created and maintained by the <a href=\"https://www.sauder.ubc.ca/programs/masters-degrees/mban\">Master of Business Analytics</a> Community."
 
 # Alert
 alert = false

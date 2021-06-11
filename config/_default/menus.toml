@@ -14,6 +14,11 @@ url = "/blog/"
 weight = 40
 
 [[main]]
+name = "Resources"
+url = "/resources/list/"
+weight = 45
+
+[[main]]
 name = "Contribute"
 url = "/contribute/how-to-contribute/"
 weight = 50
@@ -35,3 +40,8 @@ weight = 20
 name = "Privacy"
 url = "/privacy-policy/"
 weight = 10
+
+[[footer]]
+name = "License"
+url = "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+weight = 20
