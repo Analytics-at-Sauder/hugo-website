@@ -1,50 +1,62 @@
 {{ define "main" }}
-<section class="section container-fluid mt-n3 pb-3">
+<section class="section container-fluid mt-n3 pb-5">
   <div class="row justify-content-center">
-    <div class="col-lg-12 text-center">
+    <div class="col-lg-8">
       <h1 class="mt-0">{{ .Title }}</h1>
+      <p class="lead">{{ .Params.lead | safeHTML }} </p>
+      <!-- prettier-ignore -->
+      <a class="btn btn-primary btn-lg px-4 mb-2" href="{{ " notebooks/menu" | relURL }}" role="button">Browse
+        Notebooks</a>
     </div>
-    <div class="col-lg-9 col-xl-8 text-center">
-      <p class="lead">{{ .Params.lead | safeHTML }}</p>
-      <a class="btn btn-primary btn-lg px-4 mb-2" href="{{ "docs/prologue/introduction/" | relURL }}" role="button">Get started</a>
-      <p class="meta">Open-source MIT Licensed. <a href="https://github.com/h-enk/doks">GitHub v{{ .Site.Data.doks.version }}</a></p>
+    <div class="col-lg-8 text-center">
+      <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+        <iframe src="https://www.youtube.com/embed/AyTXiWXWBpQ?autoplay=1"
+          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen
+          title="YouTube Video"></iframe>
+      </div>
     </div>
   </div>
 </section>
 {{ end }}
 
 {{ define "sidebar-prefooter" }}
-<section class="section section-sm">
+<section class="section section-sm bg-light">
   <div class="container">
     <div class="row justify-content-center text-center">
-      <div class="col-lg-5">
-        <h2 class="h4">Security aware</h2>
-        <p>Get A+ scores on <a href="https://observatory.mozilla.org/analyze/analytics-at-sauder.netlify.app">Mozilla Observatory</a> out of the box. Easily change the default Security Headers to suit your needs.</p>
-      </div>
-      <div class="col-lg-5">
-        <h2 class="h4">Fast by default ⚡️</h2>
-        <p>Get 100 scores on <a href="https://googlechrome.github.io/lighthouse/viewer/?gist=7731347bb8ce999eff7428a8e763b637">Google Lighthouse</a> by default. Doks removes unused css, prefetches links, and lazy loads images.</p>
-      </div>
-      <div class="col-lg-5">
-        <h2 class="h4">SEO-ready</h2>
-        <p>Use sensible defaults for structured data, open graph, and Twitter cards. Or easily change the SEO settings to your liking.</p>
+      <div class="col-lg-12">
+        <h2>Our mission</h2>
+        <p>The objective of <span class="fw-bold">Analytics@Sauder</span> is to curate a collection of open-source business analytics tools and
+          resources, to promote opportunities for hands-on learning, to foster an online, academic community of business
+          analytics, and to facilitate conversations around data analytics within a broader business context. We hope
+          that the UBC Business Analytics Open Learning Resources can provide a platform of mutual learning: while we
+          hope that this Project can be helpful to business analytics professionals of all skill levels, we appreciate
+          all feedback on our resources so that we can continue to improve what we do. We welcome suggestions,
+          contributions, and collaborations of all kinds.</p>
       </div>
     </div>
-    <div class="row justify-content-center text-center">
-      <div class="col-lg-5">
-        <h2 class="h4">Full text search</h2>
-        <p>Search your Doks site with FlexSearch. Easily customize index settings and search options to your liking.</p>
+</section>
+<section class="section section-sm">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-16">
+        <h2>Navigate This Website</h2>
+        <p>The <a href="/notebooks/menu">Notebooks page</a> contains a list of Jupyter Notebooks with applications of analytics in various business
+          domains. Detailed information on how to contribute to our repository can be found under the <a href="/resources/list">Resources page</a>,
+          along with tutorials for Git, GitHub, Jupyter Notebook, Syzygy, and Binder.</p>
       </div>
-      <div class="col-lg-5">
-        <h2 class="h4">Page layouts</h2>
-        <p>Build pages with a landing page, blog, or documentation layout. Add custom sections and components to suit your needs.</p>
-      </div>
-      <div class="col-lg-5">
-        <h2 class="h4">Dark mode</h2>
-        <p>Switch to a low-light UI with the click of a button. Change colors with variables to match your branding.</p>
+      <div class="col-lg-16">
+        <h2>For Educators</h2>
+        <p>We invite educators to borrow from and contribute to this platform by referring to the various Notebooks for
+          use inside and outside classrooms, providing feedback through our Blog and GitHub, and contacting us with any
+          helpful resources especially data, scripts, and Notebooks. We see <span class="fw-bold">Analytics@Sauder</span> as a living learning tool
+          that is constantly evolving and improving. By navigating to the <a href="/notebooks/menu">Notebooks page</a>, you can find a collection of
+          Business Analytics Notebooks organized by Topics and Skills respectively. It is organized in this way to help
+          students think about how analytics can be applied to different business domains, and at the same time,
+          practice skills that will aid in the development of business insights. We value any feedback or suggestions
+          for these Notebooks, and we encourage instructors to submit Issues and Pull Requests via GitHub, which you can
+          learn more about on the <a href="/resources/list">Resources page.</a></p>
       </div>
     </div>
-  </div>
 </section>
 {{ end }}
 

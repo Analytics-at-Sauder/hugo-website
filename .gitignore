@@ -1,7 +1,7 @@
 functions
 node_modules
 public
-resources
+/resources
 # Local Netlify folder
 .netlify
 yarn-error.log
