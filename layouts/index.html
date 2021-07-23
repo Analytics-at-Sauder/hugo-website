@@ -25,7 +25,8 @@
     <div class="row justify-content-center text-center">
       <div class="col-lg-12">
         <h2>Our mission</h2>
-        <p>The objective of <span class="fw-bold">Analytics@Sauder</span> is to curate a collection of open-source business analytics tools and
+        <p>The objective of <span class="fw-bold">Analytics@Sauder</span> is to curate a collection of open-source
+          business analytics tools and
           resources, to promote opportunities for hands-on learning, to foster an online, academic community of business
           analytics, and to facilitate conversations around data analytics within a broader business context. We hope
           that the UBC Business Analytics Open Learning Resources can provide a platform of mutual learning: while we
@@ -37,28 +38,59 @@
 </section>
 <section class="section section-sm">
   <div class="container">
-    <div class="row justify-content-center">
+    <div class="row justify-content-center pb-5 pt-3">
       <div class="col-lg-16">
         <h2>Navigate This Website</h2>
-        <p>The <a href="/notebooks/menu">Notebooks page</a> contains a list of Jupyter Notebooks with applications of analytics in various business
-          domains. Detailed information on how to contribute to our repository can be found under the <a href="/resources/list">Resources page</a>,
+        <p>The <a href="/notebooks/menu">Notebooks page</a> contains a list of Jupyter Notebooks with applications of
+          analytics in various business
+          domains. Detailed information on how to contribute to our repository can be found under the <a
+            href="/resources/list">Resources page</a>,
           along with tutorials for Git, GitHub, Jupyter Notebook, Syzygy, and Binder.</p>
       </div>
-      <div class="col-lg-16">
+    </div>
+  </div>
+</section>
+<section class="section section-sm bg-light">
+  <div class="container py-3">
+    <div class="row justify-content-center">
+      <div class="col-sm-16 col-lg-6" style="background: url('https://www.sauder.ubc.ca/sites/default/files/dynamic_styles/scale/750/public/2018-12/19818462790_ded342b9ce_z.jpg')"></div>
+      <div class="col-sm-16 col-lg-10 py-3">
         <h2>For Educators</h2>
         <p>We invite educators to borrow from and contribute to this platform by referring to the various Notebooks for
           use inside and outside classrooms, providing feedback through our Blog and GitHub, and contacting us with any
-          helpful resources especially data, scripts, and Notebooks. We see <span class="fw-bold">Analytics@Sauder</span> as a living learning tool
-          that is constantly evolving and improving. By navigating to the <a href="/notebooks/menu">Notebooks page</a>, you can find a collection of
+          helpful resources especially data, scripts, and Notebooks. We see <span
+            class="fw-bold">Analytics@Sauder</span> as a living learning tool
+          that is constantly evolving and improving. By navigating to the <a href="/notebooks/menu">Notebooks page</a>,
+          you can find a collection of
           Business Analytics Notebooks organized by Topics and Skills respectively. It is organized in this way to help
           students think about how analytics can be applied to different business domains, and at the same time,
           practice skills that will aid in the development of business insights. We value any feedback or suggestions
           for these Notebooks, and we encourage instructors to submit Issues and Pull Requests via GitHub, which you can
           learn more about on the <a href="/resources/list">Resources page.</a></p>
       </div>
+  </div>
+</section>
+<section class="section section-sm container-fluid">
+  <div class="card-list row justify-content-center">
+    <h2 class="text-center">Latest From Our Blog</h2>
+    {{ range first 3 (where .Site.RegularPages.ByDate.Reverse "Section" "blog") -}}
+    <div class="col-sm-16 col-md-8 col-lg-5">
+      <div class="card">
+        {{if gt (len .Params.images) 0}}
+        <img src="{{ .RelPermalink }}{{ index .Params.images 0 }}" />
+        {{end}}
+        <div class="card-body">
+          <h2 class="h3"><a class="stretched-link text-body" href="{{ .RelPermalink }}">{{ .Params.title }}</a></h2>
+          <p style="margin-top: 10px;">{{ .Params.lead | safeHTML }}</p>
+          {{ partial "main/blog-meta.html" . -}}
+        </div>
+      </div>
     </div>
+    {{ end -}}
+  </div>
 </section>
 {{ end }}
+
 
 {{ define "sidebar-footer" }}
 <section class="section section-sm container-fluid">

@@ -10,6 +10,10 @@ menu:
   notebooks:
     parent: "notebooks"
 weight: 50
+topics:
+  - example-topic
+skills:
+  - example-skill
 ---
 
 #### Authors: Hossein Piri, Steven Shechter

@@ -64,7 +64,7 @@ toc: false
       role="tabpanel"
       aria-labelledby="pills-home-tab"
     >
-      <div class="row make-columns">
+      <div class="row make-columns gx-2">
         <div class="col-md-4 col-sm-6">
           <div class="panel panel-default">
             <div class="panel-heading"><h4>Finance</h4></div>
@@ -158,7 +158,7 @@ toc: false
       role="tabpanel"
       aria-labelledby="pills-profile-tab"
     >
-      <div class="row make-columns">
+      <div class="row make-columns gx-2">
         <div class="col-md-4 col-sm-6">
           <div class="panel panel-default">
             <div class="panel-heading"><h4>Data Collection</h4></div>

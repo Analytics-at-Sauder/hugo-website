@@ -7,19 +7,8 @@ draft: false
 images: []
 ---
 
-**TLDR**: We do not use cookies and we do not collect any personal data.
-
-## Website visitors
-
-- No personal information is collected.
-- No information is stored in the browser.
-- No information is shared with, sent to or sold to third-parties.
-- No information is shared with advertising companies.
-- No information is mined and harvested for personal and behavioral trends.
-- No information is monetized.
-
-## Contact us
+This Site uses web analytics tools to help analyze how the Site is used. These tools work by tagging web pages to capture a limited amount of data (including the internet protocol (‘IP”) address of the computer, device or network being used to access the pages). This data is used for aggregate reporting purposes. None of this data can be used by UBC or the service provider to identify you.
 
 [Contact us]({{< ref "contact/index.md" >}}) if you have any questions.
 
-Effective Date: _27th August 2020_
+Effective Date: _22th July 2021_

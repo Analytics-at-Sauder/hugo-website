@@ -71,7 +71,8 @@ rel  = "sitemap"
   priority = 0.5
 
 [taxonomies]
-  contributor = "contributors"
+  topics = "topics"
+  skills = "skills"
 
 [permalinks]
   blog = "/blog/:title/"
