@@ -1,6 +1,7 @@
 ---
 title: "Multiple Linear Regression"
-description: ""
+description: "A regression is among one of the most commonly used methods when it comes to analysts trying to describe the result of an event, such as the effect of different characteristics on housing prices, which is what we are going to focus on in this Notebook."
+author: "Hao Zheng"
 date: 2021-06-10T01:06:06-07:00
 lastmod: 2021-06-10T01:06:06-07:00
 draft: false
@@ -10,6 +11,9 @@ menu:
   notebooks:
     parent: "notebooks"
 weight: 50
+topics:
+skills:
+  - Regression
 ---
 
 #### Author: Hao Zheng

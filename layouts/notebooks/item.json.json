@@ -1,0 +1,12 @@
+{
+  "title": "{{ .Title }}",
+  "description": "{{ .Description }}",
+  "author": {{ jsonify .Params.author }},
+  "authorslink": {{ jsonify .Params.authorslink }},
+  "date": "{{ .Date }}",
+  "type": "{{ .Type }}",
+  "permalink" : "{{ .Permalink }}",
+  "hide": {{ jsonify .Params.hide }}
+  {{ with .Params.topics }} ,"topics" : {{ jsonify . }} {{ end }}
+  {{ with .Params.skills }} ,"skills" : {{ jsonify . }} {{ end }}
+}

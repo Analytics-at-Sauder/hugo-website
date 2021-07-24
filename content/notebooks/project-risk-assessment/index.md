@@ -1,6 +1,7 @@
 ---
 title: "Project Risk Assessment"
-description: ""
+description: "In this Notebook, we are going to explore ways to apply Monte Carlo Simulations in predicting a project's completion date and assessing a project's risk."
+author: "Charlie Cao"
 date: 2021-06-10T00:29:09-07:00
 lastmod: 2021-06-10T00:29:09-07:00
 draft: false
@@ -10,6 +11,10 @@ menu:
   notebooks:
     parent: "notebooks"
 weight: 50
+topics:
+  - Project Management
+skills:
+  - Monte Carlo Simulation
 ---
 
 #### Author: Charlie Cao

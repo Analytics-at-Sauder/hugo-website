@@ -1,6 +1,7 @@
 ---
 title: "Critical Path Analysis"
-description: ""
+description: "In this Notebook, we are going to explore ways we can use Python to look for and visualize critical paths in projects."
+author: "Charlie Cao"
 date: 2021-06-10T00:55:32-07:00
 lastmod: 2021-06-10T00:55:32-07:00
 draft: false
@@ -10,6 +11,8 @@ menu:
   notebooks:
     parent: "notebooks"
 weight: 50
+topics:
+  - Project Management
 ---
 
 #### Author: Charlie Cao

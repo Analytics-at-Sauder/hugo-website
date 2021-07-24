@@ -16,6 +16,11 @@
 		<main class="docs-content col-lg-12 col-xl-11">
 		{{ end -}}
 			<h1>{{ .Title }}</h1>
+			{{ if ( .Params.authorslink ) }}
+				<a href="{{ .Params.authorslink }}" target="_blank">By: {{ .Params.author }}</a>
+			{{else}}
+				{{ with .Params.author}}<p>By: {{ . }}</p>{{end}}
+			{{end}}
 			<p class="lead">{{ .Params.lead | safeHTML }}</p>
 			{{ partial "main/headline-hash.html" .Content }}
 			{{ if .Site.Params.editPage -}}

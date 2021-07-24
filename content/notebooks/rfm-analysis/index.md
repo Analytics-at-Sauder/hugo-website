@@ -1,6 +1,7 @@
 ---
-title: "Rfm Analysis"
-description: ""
+title: "RFM Analysis"
+description: "In this Project, we focus on RFM (Recency, Frequency, and Monetary value) analysis. This type of analysis is used when historical data for existing customers are available."
+author: "Kemjika Ananaba"
 date: 2021-06-10T00:48:10-07:00
 lastmod: 2021-06-10T00:48:10-07:00
 draft: false
@@ -10,6 +11,10 @@ menu:
   notebooks:
     parent: "notebooks"
 weight: 50
+topics:
+  - Marketing
+skills:
+  - Data Manipulation
 ---
 
 #### Author: Kemjika Ananaba

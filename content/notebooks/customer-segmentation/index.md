@@ -1,6 +1,7 @@
 ---
 title: "Customer Segmentation"
-description: ""
+description: "In this Project, we will focus on combining RFM (Recency, Frequency, and Monetary value) analysis with clustering analysis to to identify different market segments."
+author: "Kemjika Ananaba"
 date: 2021-06-10T00:53:00-07:00
 lastmod: 2021-06-10T00:53:00-07:00
 draft: false
@@ -10,6 +11,9 @@ menu:
   notebooks:
     parent: "notebooks"
 weight: 50
+topics:
+  - Marketing
+skills:
 ---
 
 #### Author: Kemjika Ananaba

@@ -1,6 +1,7 @@
 ---
 title: "Inventory Management"
-description: ""
+description: "In this Project, we will review the economic order quantity (EOQ) model and its application when demand uncertainty is introduced."
+author: "Kemjika Ananaba"
 date: 2021-06-10T00:46:20-07:00
 lastmod: 2021-06-10T00:46:20-07:00
 draft: false
@@ -10,6 +11,10 @@ menu:
   notebooks:
     parent: "notebooks"
 weight: 50
+topics:
+  - Supply Chain Management
+skills:
+  - Monte Carlo Simulation
 ---
 
 #### Author: Kemjika Ananaba

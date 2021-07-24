@@ -11,267 +11,105 @@ menu:
     parent: "all notebooks"
 weight: 010
 toc: false
+hide: true
 ---
 
-<style>
-  h1 {font-size: 34px;}
-  h1.title {font-size: 38px; margin-bottom: -30px;}
-  h2 {font-size: 30px;}
-  h3 {font-size: 24px;}
-  h4 {font-size: 18px;}
-  h5 {font-size: 16px;}
-  h6 {font-size: 12px;}
-  code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
-  pre:not([class]) { background-color: white }
-</style>
+<script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
 
-<div>
-  <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-    <li class="nav-item" role="presentation">
-      <button
-        class="nav-link active"
-        id="pills-home-tab"
-        data-bs-toggle="pill"
-        data-bs-target="#pills-home"
-        type="button"
-        role="tab"
-        aria-controls="pills-home"
-        aria-selected="true"
-      >
-        By Topic
-      </button>
-    </li>
-    <li class="nav-item" role="presentation">
-      <button
-        class="nav-link"
-        id="pills-profile-tab"
-        data-bs-toggle="pill"
-        data-bs-target="#pills-profile"
-        type="button"
-        role="tab"
-        aria-controls="pills-profile"
-        aria-selected="false"
-      >
-        By Skill
-      </button>
-    </li>
-  </ul>
+<script>
 
-  <div class="tab-content" id="pills-tabContent">
-    <div
-      class="tab-pane fade show active"
-      id="pills-home"
-      role="tabpanel"
-      aria-labelledby="pills-home-tab"
-    >
-      <div class="row make-columns gx-2">
-        <div class="col-md-4 col-sm-6">
-          <div class="panel panel-default">
-            <div class="panel-heading"><h4>Finance</h4></div>
-            <div class="list-group">
-              <a
-                class="list-group-item"
-                href="/notebooks/finance"
-                >Stock Returns Analysis</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6">
-          <div class="panel panel-default">
-            <div class="panel-heading"><h4>Healthcare</h4></div>
-            <div class="list-group">
-              <a class="list-group-item" href="nb0005_er_resource_planning.html"
-                >ER Resource Planning</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6">
-          <div class="panel panel-default">
-            <div class="panel-heading"><h4>Marketing</h4></div>
-            <div class="list-group">
-              <a class="list-group-item" href=""
-                >Conjoint Analysis</a
-              >
-              <a
-                class="list-group-item"
-                href="nb0010_customer_segmentation.html"
-                >Customer Segmentation</a
-              >
-              <a class="list-group-item" href="nb0011_recommender_system.html"
-                >Recommender System</a
-              >
-              <a class="list-group-item" href="nb0006_rfm_analysis.html"
-                >RFM Analysis</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6">
-          <div class="panel panel-default">
-            <div class="panel-heading"><h4>Project Management</h4></div>
-            <div class="list-group">
-              <a
-                class="list-group-item"
-                href="nb0013_critical_path_analysis.html"
-                >Critical Path Analysis</a
-              >
-              <a
-                class="list-group-item"
-                href="nb0003_project_risk_assessment.html"
-                >Project Risk Assessment</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6">
-          <div class="panel panel-default">
-            <div class="panel-heading"><h4>Supply Chain Management</h4></div>
-            <div class="list-group">
-              <a
-                class="list-group-item"
-                href="nb0012_inventory_decision_analysis.html"
-                >Inventory Decision Analysis</a
-              >
-              <a class="list-group-item" href="nb0004_inventory_management.html"
-                >Inventory Management</a
-              >
-              <a
-                class="list-group-item"
-                href="nb0008_sales_forecast_part_1.html"
-                >Sales Forecast - Part I</a
-              >
-              <a
-                class="list-group-item"
-                href="nb0008_sales_forecast_part_2.html"
-                >Sales Forecast - Part II</a
-              >
-            </div>
-          </div>
-        </div>
+function renderNotebooks (notebooks) {
+  const notebookContainer = $('#notebook-container')
+  notebookContainer.empty()
+  notebooks.forEach((notebook) => {
+    let badges = []
+    if (notebook.topics) badges = badges.concat(notebook.topics);
+    if (notebook.skills) badges = badges.concat(notebook.skills);
+    badges = badges.map((name) => `<span class="badge bg-primary me-1">${name}</span>`).join('') ?? ''
+
+    notebookContainer.append(`
+      <div class="shadow-sm px-3 py-3 rounded card mt-2">
+        <div class="d-flex flex-wrap">
+        <a class="me-2" href="${notebook.permalink}">
+        <h5 class="my-0">${notebook.title}</h5>
+        </a>
+        <span>
+          ${badges}
+        </span>
+        <div>
+        ${ notebook.author ? `<subtitle>
+          by: ${ notebook.authorslink ? `<a href="${notebook.authorslink}">Author</a>}` : notebook.author}
+        </subtitle>` : ''}
+        <p class="my-0 mt-1">${notebook.description}</p>
       </div>
-    </div>
-    <div
-      class="tab-pane fade"
-      id="pills-profile"
-      role="tabpanel"
-      aria-labelledby="pills-profile-tab"
-    >
-      <div class="row make-columns gx-2">
-        <div class="col-md-4 col-sm-6">
-          <div class="panel panel-default">
-            <div class="panel-heading"><h4>Data Collection</h4></div>
-            <div class="list-group">
-              <a class="list-group-item" href="nb0009_web_scraping.html"
-                >Web Scraping</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6">
-          <div class="panel panel-default">
-            <div class="panel-heading"><h4>Data Manipulation</h4></div>
-            <div class="list-group">
-              <a
-                class="list-group-item"
-                href="nb0014_common_probability_distributions.html"
-                >Common Probability Distributions</a
-              >
-              <a class="list-group-item" href="nb0007_data_cleaning.html"
-                >Data Cleaning</a
-              >
-              <a class="list-group-item" href="nb0006_rfm_analysis.html"
-                >RFM Analysis</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6">
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              <h4>Discrete-Event Simulation</h4>
-            </div>
-            <div class="list-group">
-              <a class="list-group-item" href="nb0005_er_resource_planning.html"
-                >ER Resource Planning</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6">
-          <div class="panel panel-default">
-            <div class="panel-heading"><h4>Forecasting</h4></div>
-            <div class="list-group">
-              <a
-                class="list-group-item"
-                href="nb0008_sales_forecast_part_1.html"
-                >Sales Forecast - Part I</a
-              >
-              <a
-                class="list-group-item"
-                href="nb0008_sales_forecast_part_2.html"
-                >Sales Forecast - Part II</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6">
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              <h4 id="linear-programming">Linear Programming & Optimization</h4>
-            </div>
-            <div class="list-group">
-              <a class="list-group-item" href="nb0002_price_versioning.html"
-                >Price Versioning</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6">
-          <div class="panel panel-default">
-            <div class="panel-heading"><h4>Machine Learning</h4></div>
-            <div class="list-group">
-              <a class="list-group-item" href="nb0011_recommender_system.html"
-                >Recommender System</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6">
-          <div class="panel panel-default">
-            <div class="panel-heading"><h4>Monte Carlo Simulation</h4></div>
-            <div class="list-group">
-              <a
-                class="list-group-item"
-                href="nb0012_inventory_decision_analysis.html"
-                >Inventory Decision Analysis</a
-              >
-              <a class="list-group-item" href="nb0004_inventory_management.html"
-                >Inventory Management</a
-              >
-              <a
-                class="list-group-item"
-                href="nb0003_project_risk_assessment.html"
-                >Project Risk Assessment</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6">
-          <div class="panel panel-default">
-            <div class="panel-heading"><h4>Regression</h4></div>
-            <div class="list-group">
-              <a class="list-group-item" href="nb0015_conjoint_analysis.html"
-                >Conjoint Analysis</a
-              >
-              <a class="list-group-item" href="nb0016_mlr.html"
-                >Multiple Linear Regression</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+    `)
+  })
+}
+
+function renderFilters(notebooks) {
+  const topics = [...new Set(notebooks.reduce((acc, {topics}) => topics ? acc.concat(topics) : acc , []))]
+  const skills = [...new Set(notebooks.reduce((acc, {skills}) => skills ? acc.concat(skills) : acc , []))]
+
+  const topicFilter = $('#topic-filter')
+  const skillFilter = $('#skill-filter')
+
+  topics.forEach((topic) => {
+    topicFilter.append(`<option value="${topic}">${topic}</option>`)
+  })
+
+  skills.forEach((skill) => {
+    skillFilter.append(`<option value="${skill}">${skill}</option>`)
+  })
+}
+
+// global notebooks variable
+let notebooks;
+
+$( document ).ready(function () {
+  // bind select listeners to the filters
+  $('#topic-filter').change(function () {
+    renderNotebooks(notebooks.filter(({topics}) => topics && topics.includes($(this).val())))
+    $('#skill-filter').prop('selectedIndex',0);
+  })
+
+  $('#skill-filter').change(function () {
+    renderNotebooks(notebooks.filter(({skills}) => skills && skills.includes($(this).val())))
+    $('#topic-filter').prop('selectedIndex',0);
+  })
+
+  $('#notebook-search').keyup(function () {
+    $('#skill-filter').prop('selectedIndex',0);
+    $('#topic-filter').prop('selectedIndex',0);
+    const value = $('#notebook-search').val().toLowerCase()
+    renderNotebooks(
+      notebooks.filter(({ description, title, author }) => [description, title, author].some((val) => {
+        return val.toLowerCase().includes(value)
+      })))
+  })
+
+  // fetch all notebooks
+  fetch("/notebooks/index.json")
+    .then(response => response.json())
+    .then(({data}) => {
+      notebooks = data.filter((notebook) => !notebook.hide)
+      renderNotebooks(notebooks)
+      renderFilters(notebooks)
+    })
+})
+</script>
+
+<div class="input-group mb-3">
+  <input id="notebook-search" type="text" class="form-control" placeholder="Search..." aria-label="Search" aria-describedby="search">
+</div>
+
+<div class="d-flex mb-3">
+  <select id="topic-filter" class="form-select" aria-label="Topic Filter" onselect="">
+    <option selected>Filter by Topics</option>
+  </select>
+  <select id="skill-filter" class="form-select ms-5" aria-label="Skill filter">
+    <option selected>Filter by Skills</option>
+  </select>
+</div>
+
+<div id="notebook-container">
 </div>

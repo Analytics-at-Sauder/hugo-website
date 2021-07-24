@@ -5,7 +5,7 @@
       <h1 class="mt-0">{{ .Title }}</h1>
       <p class="lead">{{ .Params.lead | safeHTML }} </p>
       <!-- prettier-ignore -->
-      <a class="btn btn-primary btn-lg px-4 mb-2" href="{{ " notebooks/menu" | relURL }}" role="button">Browse
+      <a class="btn btn-primary btn-lg px-4 mb-2" href="{{ "notebooks/menu" | relURL }}" role="button">Browse
         Notebooks</a>
     </div>
     <div class="col-lg-8 text-center">
@@ -70,7 +70,7 @@
       </div>
   </div>
 </section>
-<section class="section section-sm container-fluid">
+<section class="section section-sm container">
   <div class="card-list row justify-content-center">
     <h2 class="text-center">Latest From Our Blog</h2>
     {{ range first 3 (where .Site.RegularPages.ByDate.Reverse "Section" "blog") -}}
@@ -85,6 +85,34 @@
           {{ partial "main/blog-meta.html" . -}}
         </div>
       </div>
+    </div>
+    {{ end -}}
+  </div>
+</section>
+<section class="section section-sm container">
+  <div class="card-list row justify-content-center">
+    <h2 class="text-center">Latest Notebooks</h2>
+    {{ range first 3 (where .Site.RegularPages.ByDate.Reverse "Section" "notebooks") -}}
+    <div class="shadow-sm px-3 py-3 rounded card mt-2">
+      <div class="d-flex flex-wrap">
+        <a class="me-2" href="${notebook.permalink}">
+          <h5 class="my-0">{{ .Params.title }}</h5>
+        </a>
+        <span>
+          {{ range .Params.skills}}
+            <span class="badge bg-primary me-1">{{ . }}</span>
+          {{ end }}
+          {{ range .Params.topics}}
+            <span class="badge bg-primary me-1">{{ . }}</span>
+          {{ end }}
+        </span>
+      </div>
+        {{ if ( .Params.authorslink ) }}
+        <a href="{{ .Params.authorslink }}" target="_blank">By: {{ .Params.author }}</a>
+        {{else}}
+          {{ with .Params.author}}<p>By: {{ . }}</p>{{end}}
+        {{end}}
+        <p class="my-0 mt-1">{{ .Params.description }}</p>
     </div>
     {{ end -}}
   </div>

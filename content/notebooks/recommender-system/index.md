@@ -1,6 +1,7 @@
 ---
 title: "Recommender System"
-description: ""
+description: "In this project, we will lead you through a combination of text processing and marketing that mainly focus on the content optimization aspect: the recommender system and let you understand how the system actually works."
+author: "Hao Zheng"
 date: 2021-06-10T00:53:49-07:00
 lastmod: 2021-06-10T00:53:49-07:00
 draft: false
@@ -10,6 +11,10 @@ menu:
   notebooks:
     parent: "notebooks"
 weight: 50
+topics:
+  - Marketing
+skills:
+  - Machine Learning
 ---
 
 #### Author: Hao Zheng

@@ -1,6 +1,7 @@
 ---
 title: "Inventory Decision Analysis"
-description: ""
+description: "In this Project, we use Monte Carlo simulation and optimization tools to determine the optimal expected profits under different scenarios."
+author: "Kemjika Ananaba"
 date: 2021-06-10T00:54:30-07:00
 lastmod: 2021-06-10T00:54:30-07:00
 draft: false
@@ -10,6 +11,10 @@ menu:
   notebooks:
     parent: "notebooks"
 weight: 50
+topics:
+  - Supply Chain Management
+skills:
+  - Monte Carlo Simulation
 ---
 
 #### Author: Kemjika Ananaba

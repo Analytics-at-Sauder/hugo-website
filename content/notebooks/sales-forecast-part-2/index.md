@@ -1,6 +1,7 @@
 ---
 title: "Sales Forecast Part 2"
-description: ""
+description: "This is the second of a series of two notebooks on the topic of Sales Forecast. Through this series, we want to showcase one of the many ways that one can follow exloring and forecasting time series data."
+author: "Charlie Cao"
 date: 2021-06-10T00:51:42-07:00
 lastmod: 2021-06-10T00:51:42-07:00
 draft: false
@@ -10,6 +11,10 @@ menu:
   notebooks:
     parent: "notebooks"
 weight: 50
+topics:
+  - Supply Chain Management
+skills:
+  - Forecasting
 ---
 
 #### Author: Charlie Cao

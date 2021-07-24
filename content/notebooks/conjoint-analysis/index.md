@@ -1,6 +1,7 @@
 ---
 title: "Conjoint Analysis"
-description: ""
+description: "In this Project, we will learn about conjoint analysis and its application when introducing a new product into the market. Rank-based conjoint analysis is carried out in this Project using multiple linear regression."
+author: "Kemjika Ananaba"
 date: 2021-06-10T01:05:19-07:00
 lastmod: 2021-06-10T01:05:19-07:00
 draft: false
@@ -10,6 +11,10 @@ menu:
   notebooks:
     parent: "notebooks"
 weight: 50
+topics:
+  - Marketing
+skills:
+  - Regression
 ---
 
 #### Author: Kemjika Ananaba

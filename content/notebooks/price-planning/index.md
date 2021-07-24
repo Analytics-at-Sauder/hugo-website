@@ -1,6 +1,7 @@
 ---
-title: "Price Planning"
-description: ""
+title: "Price Versioning"
+description: "In this project, we will lead you through examples to talk about why creating different version can bring more profits to the companies while the customers are still willing to pay for it."
+author: "Hao Zheng"
 date: 2021-06-10T00:22:40-07:00
 lastmod: 2021-06-10T00:22:40-07:00
 draft: false
@@ -10,6 +11,9 @@ menu:
   notebooks:
     parent: "notebooks"
 weight: 50
+topics:
+skills:
+  - Linear Programming/Optimization
 ---
 
 #### Author: Hao Zheng

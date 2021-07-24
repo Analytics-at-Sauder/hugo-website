@@ -1,6 +1,7 @@
 ---
 title: "Web Scraping"
-description: ""
+description: "Scraping of websites is a very useful activity especially to achieve recruiting or marketing tasks. Using Python you can make this process smoother, using your time to focus on those profiles that have critical peculiarities."
+author: "Kemjika Ananaba"
 date: 2021-06-10T00:52:33-07:00
 lastmod: 2021-06-10T00:52:33-07:00
 draft: false
@@ -10,6 +11,9 @@ menu:
   notebooks:
     parent: "notebooks"
 weight: 50
+topics:
+skills:
+  - Data Collection
 ---
 
 #### Author: Kemjika Ananaba

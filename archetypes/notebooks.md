@@ -1,6 +1,8 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
 description: ""
+author: "Your name"
+authorslink: ""
 date: {{ .Date }}
 lastmod: {{ .Date }}
 draft: false
@@ -11,7 +13,9 @@ menu:
     parent: "notebooks"
 weight: 50
 topics:
-  - example-topic
+  - example-topic-1
+  - example-topic-2
 skills:
   - example-skill
+  - example-skill-2
 ---

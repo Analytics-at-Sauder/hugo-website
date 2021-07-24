@@ -1,6 +1,8 @@
 ---
 title: "Common Probability Distributions"
-description: ""
+description: "This notebook describes probability distributions often used in simulation modeling, demonstrates how to generate random variables from these distributions, and visualizes the distributions through their density functions and histograms from sampled data."
+author: "Hossein Piri, Steven Shechter"
+authorslink: ""
 date: 2021-06-10T01:04:42-07:00
 lastmod: 2021-06-10T01:04:42-07:00
 draft: false
@@ -11,9 +13,8 @@ menu:
     parent: "notebooks"
 weight: 50
 topics:
-  - example-topic
 skills:
-  - example-skill
+  - Data Manipulation
 ---
 
 #### Authors: Hossein Piri, Steven Shechter
@@ -32,39 +33,39 @@ We encourage you to create your own Jupytor notebook and follow along. You can a
 
 ---
 
-### <u> <font color = blue > Discrete Random Variables: </font> </u>
+### <u> <font  > Discrete Random Variables: </font> </u>
 
-### <font color = red> Discrete Uniform Distribution </font>
+### <font > Discrete Uniform Distribution </font>
 
 Example cases: often used when all you know is the minimum and maximum values a variable can take, and you know it can take any whole number value in between with equal probability. This is also used when you want to simulate drawing numbers out of a hat with equal chance, and with replacement each time. e.g., we can simulate the Birthday Problem by using a discrete uniform between 1 and 365 for each person in the room.
 
-### <font color = red> Binomial Distribution </font>
+### <font > Binomial Distribution </font>
 
 Example cases: you want to generate the random number of people who show up for a flight, when you sold 100 tickets and each person has a .90 probability of showing up.
 
-### <font color = red> General Discrete Distribution </font>
+### <font > General Discrete Distribution </font>
 
 Example cases: you want to generate random whole numbers or categories, with a specific probability of getting each. e.g., the group size of a party arriving to a restaurant will be 1, 2, 3, or 4 with probabilities .2, .4, .1, and .3, respectively.
 
-### <u> <font color = blue > Continuous Random Variables: </font> </u>
+### <u> <font  > Continuous Random Variables: </font> </u>
 
-### <font color = red> Continuous Uniform Distibution </font>
+### <font > Continuous Uniform Distibution </font>
 
 Example cases: often used when all you know is the minimum and maximum values a variable can take, and you assume it can take any continuous value in between with equal probability. e.g., a service time that takes anywhere between 5 and 10 minutes.
 
-### <font color = red> Triangular Distribution </font>
+### <font > Triangular Distribution </font>
 
 Example cases: often used when all you know is the minimum, maximum, and most likely values of a variable e.g., service time that is between 5 and 10 minutes, but most often takes 7 minutes.
 
-### <font color = red> Normal Distribution </font>
+### <font > Normal Distribution </font>
 
 Example cases: you want to generate random demand that has a normal distribution with mean 150 and standard deviation 25.
 
-### <font color = red> Lognormal Distribution </font>
+### <font > Lognormal Distribution </font>
 
 Example cases: often used when you want to generate variables with a "long right tail." e.g., incomes in a population are often well-modeled by a log-normal distribution. e.g., If the ln (natural log) of your data looks like a Normal distribution with mean 4 and standard deviation 1, then you can simulate values as a Lognormal with parameters mean = 4 and sd = 1.
 
-### <font color = red> Exponential Distribution </font>
+### <font > Exponential Distribution </font>
 
 Example cases: often used when you want to generate random times between arrivals to a queue; e.g., inter-arrival times that are exponentially distributed with an average of 5 minutes between arrivals.
 
@@ -78,7 +79,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 ```
 
-### <font color = red> Discrete Uniform Distribution </font>
+### <font > Discrete Uniform Distribution </font>
 
 Example cases: often used when all you know is the minimum and maximum values a variable can take, and you know it can take any whole number value in between with equal probability. This is also used when you want to simulate drawing numbers out of a hat with equal chance, and with replacement each time. e.g., we can simulate the Birthday Problem by using a discrete uniform between 1 and 365 for each person in the room.
 
@@ -99,7 +100,7 @@ print(np.random.randint(lower,upper+1))
     182
     48
 
-### <font color = red> Binomial Distribution </font>
+### <font > Binomial Distribution </font>
 
 Example cases: you want to generate the random number of people who show up for a flight, when you sold 100 tickets and each person has a .90 probability of showing up.
 
@@ -120,7 +121,7 @@ print(np.random.binomial(n, p))
     94
     88
 
-### <font color = red> General Discrete Distribution </font>
+### <font > General Discrete Distribution </font>
 
 Example cases: you want to generate random whole numbers or categories, with a specific probability of getting each. e.g., the group size of a party arriving to a restaurant will be 1, 2, 3, or 4 with probabilities .2, .4, .1, and .3, respectively.
 
@@ -148,7 +149,7 @@ print(np.random.choice(your_array, p=probability))
     2
     1
 
-### <font color = red> Continuous Uniform Distibution </font>
+### <font > Continuous Uniform Distibution </font>
 
 Example cases: often used when all you know is the minimum and maximum values a variable can take, and you assume it can take any continuous value in between with equal probability. e.g., a service time that takes anywhere between 5 and 10 minutes.
 
@@ -169,7 +170,7 @@ print(np.random.uniform(lower, upper, 1))
     [5.84700153]
     [8.81755393]
 
-### <font color = red> Triangular Distribution </font>
+### <font > Triangular Distribution </font>
 
 Example cases: often used when all you know is the minimum, maximum, and most likely values of a variable e.g., service time that is between 5 and 10 minutes, but most often takes 7 minutes.
 
@@ -192,7 +193,7 @@ print(np.random.triangular(Min,Mode,Max, 1))
     [6.67251991]
     [6.18580362]
 
-### <font color = red> Normal Distribution </font>
+### <font > Normal Distribution </font>
 
 Example cases: you want to generate random demand that has a normal distribution with mean 150 and standard deviation 25.
 
@@ -213,7 +214,7 @@ print(np.random.normal(mu,sigma,1) )
     [154.90223985]
     [136.76167883]
 
-### <font color = red> Lognormal Distribution </font>
+### <font > Lognormal Distribution </font>
 
 Example cases: often used when you want to generate variables with a "long right tail." e.g., incomes in a population are often well-modeled by a log-normal distribution. e.g., If the ln (natural log) of your data looks like a Normal distribution with mean 4 and standard deviation 1, then you can simulate values as a Lognormal with parameters mean = 4 and sd = 1.
 
@@ -234,7 +235,7 @@ print(np.random.lognormal(mu, sigma, 1))
     [35.19124152]
     [45.98108506]
 
-### <font color = red> Exponential Distribution </font>
+### <font > Exponential Distribution </font>
 
 Example cases: often used when you want to generate random times between arrivals to a queue; e.g., inter-arrival times that are exponentially distributed with an average of 5 minutes between arrivals.
 
@@ -259,7 +260,7 @@ print(np.random.exponential(mean, 1))
 
 ---
 
-### <font color = red> Discrete Uniform Distribution </font>
+### <font > Discrete Uniform Distribution </font>
 
 ```python
 ### Specify upper and lower bound
@@ -292,7 +293,7 @@ plt.show()
 
 ![png](output_22_0.png)
 
-### <font color = red> Binomial Distribution </font>
+### <font > Binomial Distribution </font>
 
 ```python
 ### Specify n and p
@@ -321,7 +322,7 @@ plt.show()
 
 ![png](output_24_0.png)
 
-### <font color = red> General Discrete Distribution </font>
+### <font > General Discrete Distribution </font>
 
 ```python
 ### Specify your array of possible outcomes and the probability of each outcome
@@ -353,7 +354,7 @@ plt.show()
 
 ![png](output_26_0.png)
 
-### <font color = red> Continuous Uniform Distibution </font>
+### <font > Continuous Uniform Distibution </font>
 
 ```python
 ### Specify upper and lower bound
@@ -381,7 +382,7 @@ plt.show()
 
 ![png](output_28_0.png)
 
-### <font color = red> Triangular Distribution </font>
+### <font > Triangular Distribution </font>
 
 ```python
 ### Specify min, mode, max
@@ -409,7 +410,7 @@ plt.show()
 
 ![png](output_30_0.png)
 
-### <font color = red> Normal Distribution </font>
+### <font > Normal Distribution </font>
 
 ```python
 # Specify the mean and standard deviation
@@ -429,7 +430,7 @@ plt.show()
 
 ![png](output_32_0.png)
 
-### <font color = red> Lognormal Distribution </font>
+### <font > Lognormal Distribution </font>
 
 ```python
 ### Specify the mean and standard deviation of the natural log of the random variable
@@ -453,7 +454,7 @@ plt.show()
 
 ![png](output_34_0.png)
 
-### <font color = red> Exponential Distribution </font>
+### <font > Exponential Distribution </font>
 
 ```python
 ### Specify the mean

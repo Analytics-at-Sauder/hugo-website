@@ -1,6 +1,7 @@
 ---
 title: "Stock Returns Analysis"
-description: ""
+description: "In this Project, we will focus on using Python and Pandas to retrieve historical stock prices from Yahoo Finance to perform primary analysis of stock returns and calculate key financial statistics or moments"
+author: "Kemjika Ananaba"
 date: 2021-04-15T00:02:08-07:00
 lastmod: 2021-04-15T00:02:08-07:00
 draft: false
@@ -10,6 +11,9 @@ menu:
   notebooks:
     parent: "notebooks"
 weight: 50
+topics:
+  - Finance
+skills:
 ---
 
 #### Author: Kemjika Ananaba

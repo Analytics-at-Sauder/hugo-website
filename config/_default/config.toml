@@ -1,4 +1,4 @@
-baseurl = "/"
+baseurl = "http://localhost:1313/"
 canonifyURLs = false
 disableAliases = true
 disableHugoGeneratorInject = true
@@ -12,7 +12,7 @@ rssLimit = 10
 # add redirects/headers
 [outputs]
 home = ["HTML", "RSS", "REDIRECTS", "HEADERS"]
-section = ["HTML", "RSS", "SITEMAP"]
+section = ["HTML", "RSS", "SITEMAP", "JSON"]
 
 # remove .{ext} from text/netlify
 [mediaTypes."text/netlify"]

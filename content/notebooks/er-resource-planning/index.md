@@ -1,6 +1,7 @@
 ---
 title: "Er Resource Planning"
-description: ""
+description: "In this notebook, we are going to explore ways that one can apply Discrete Event Simulation when making resource planning decisions for Emergency Rooms (ER)."
+author: "Charlie Cao"
 date: 2021-06-09T21:15:13-07:00
 lastmod: 2021-06-09T21:15:13-07:00
 draft: false
@@ -10,6 +11,10 @@ menu:
   notebooks:
     parent: "notebooks"
 weight: 50
+topics:
+  - Healthcare
+skills:
+  - Discrete Event Simulation
 ---
 
 #### Author: Charlie Cao

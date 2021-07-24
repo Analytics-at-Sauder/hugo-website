@@ -1,6 +1,7 @@
 ---
 title: "Data Cleaning"
-description: ""
+description: "In this Project, we will be introducing eight basic techniques that can be applied to most of the data sets that you will encounter. Our goal is to transform extremely messy data into less messy data."
+author: "Hao Zheng"
 date: 2021-06-10T00:49:48-07:00
 lastmod: 2021-06-10T00:49:48-07:00
 draft: false
@@ -10,6 +11,9 @@ menu:
   notebooks:
     parent: "notebooks"
 weight: 50
+topics:
+skills:
+  - Data Manipulation
 ---
 
 #### Author: Hao Zheng
