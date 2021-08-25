@@ -48,8 +48,8 @@ Append the markdown contents of the notebook you just downloaded into the newly 
 
 In addition, this is the time to fill the following things in the newly created markdown file:
 
-- `description` - A brief description for your blog post
-- `lead` - A quick one sentence lead for your blog post
+- `description` - A brief description for your notebook
+- `lead` - A quick one sentence lead for your notebook
 - `author` - Your name, or your team's names!
 - `topics` - Topics that your notebook covers. his can be left blank.
 - `skills` - Skills that your notebook uses. This can be left blank.
@@ -78,9 +78,9 @@ Create a folder titled `<your-notebook-title>`. Make sure the title is in `lower
 
 Create a file titled `index.md` within your newly created folder. Make sure to fill in the following:
 
-- `title` - The title of your blog post
-- `description` - A brief description for your blog post
-- `lead` - A quick one sentence lead for your blog post
+- `title` - The title of your notebook
+- `description` - A brief description for your notebook
+- `lead` - A quick one sentence lead for your notebook
 - `date` - The current date
 - `lastmod` - The current date
 - `images` - This can be left blank.
@@ -122,7 +122,7 @@ Create a fork of the repository [https://github.com/Analytics-at-Sauder/hugo-web
 
 ![png](fork.png)
 
-### Step 5 - Upload files to /content/blog
+### Step 5 - Upload files to /content/notebook
 
 Next, navigate to the folder `/content/notebooks/`. this should be located at the following link:
 
