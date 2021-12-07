@@ -19,11 +19,11 @@ schemaType = "Organization"
 schemaLogo = "logo-doks.png"
 schemaTwitter = "https://twitter.com/UBC"
 schemaLinkedIn = "https://www.linkedin.com/school/universityofbc"
-schemaGitHub = "https://github.com/Analytics-at-Sauder/k"
+schemaGitHub = "https://github.com/Analytics-at-Sauder"
 schemaSection = "blog"
 
 ## Sitelinks Search Box
-siteLinksSearchBox = false
+siteLinksSearchBox = true
 
 ## Chrome Browser
 themeColor = "#fff"
@@ -34,6 +34,7 @@ bgColor = "#fff"
 landscapePhotoWidths = [900, 800, 700, 600, 500]
 portraitPhotoWidths = [800, 700, 600, 500]
 lqipWidth = "20x"
+smallLimit = "300"
 
 # Footer
 footer = "Created and maintained by the <a href=\"https://www.sauder.ubc.ca/programs/masters-degrees/mban\">Master of Business Analytics</a> Community."
@@ -51,8 +52,8 @@ editPage = true
   clipBoard = true
   instantPage = true
   flexSearch = true
-  darkMode = true
+  darkMode = false
   bootStrapJs = true
-  breadCrumb = false
+  breadCrumb = true
   highLight = true
-  kaTex = false
+  kaTex = true

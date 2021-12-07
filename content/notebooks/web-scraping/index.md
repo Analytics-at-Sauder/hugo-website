@@ -72,8 +72,6 @@ print(soup.find_all('a')[0])
 
 To identify the section that hosts tag the information that is needed, the source code of the web page can be checked by using the browser developer tools. The diagram below shows the web page and its corresponding source code. This is useful when identifying the tag id containing the information to be scraped from the web page.
 
-![image.png](attachment:image.png)
-
 The developer source code shows that the tag id is seven-day-forecast-container.
 
 ```python

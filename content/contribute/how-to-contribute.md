@@ -23,15 +23,11 @@ Create a new site, change directories, install dependencies, and start developme
 
 #### Cloning the repository
 
-{{< btn-copy text="git clone https://github.com/Analytics-at-Sauder/hugo-website" >}}
-
 ```bash
 git clone https://github.com/Analytics-at-Sauder/hugo-website
 ```
 
 ### Change directories
-
-{{< btn-copy text="cd hugo-website" >}}
 
 ```bash
 cd hugo-website
@@ -39,15 +35,11 @@ cd hugo-website
 
 ### Install dependencies
 
-{{< btn-copy text="npm install" >}}
-
 ```bash
 npm install
 ```
 
 ### Start development server
-
-{{< btn-copy text="npm run start" >}}
 
 ```bash
 npm run start

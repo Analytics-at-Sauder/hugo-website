@@ -39,7 +39,6 @@ Let's consider the following example:
 - Task D requires 3 days, and it can only start after Task A is finished.
 - Task E requires 5 days, and it can only start after _both_ Task C and Task D are finished.
 
-![Critical Path](nb0013_images/p13_01.png)
 
 By calculating the slack of each task, we can quickly identify that the critical path is _B -> C -> E_, since there is zero slack along the path connecting these three tasks. While the critical path was fairly simple to identify here, this analysis becomes much more complicated when managers are presented with more tasks for each project. Furthermore, when certain tasks are compressed, the critical path might change. It would be incredibly mechanical and tedious to repeat this process to identify the critical path for every single project we will ever face; therefore, in this Project, we will experiment with some packages that can be used to help Project Managers visualize the dependencies of different projects, identify the critical path, and understand how the critical path changes as completion times of different tasks are reduced.
 

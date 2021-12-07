@@ -43,8 +43,6 @@ A construction project involves three tasks:
 2. Task 2 has a 60% probability of taking six days to finish and a 20% probability each of being completed in five days or eight days
 3. Task 3 has an 80% probability of being completed in four days, 5% probability of being completed in three days, and a 15% probability of being completed in five days.
 
-![Sequential Tasks](nb0003_images/p03_01.png)
-
 Each task is dependent on the task before it, meaning that the three tasks must be executed in sequence. Your task is to provide information to the Project Manager concerning the expected completion time of the project and possible delays. Before we begin, install and import the following packages:
 
 ```python
@@ -218,7 +216,6 @@ print(np.percentile(proj_record,95))
 
 Now, we have received new information that Tasks 2 and 3 can actually be conducted at the same time.
 
-![Parallel Tasks](nb0003_images/p03_02.png)
 
 With this update, the project completion time is now dependent on the task that gets completed later: `proj_time = t1_time + max(t2_time, t3_time)`. Therefore, we slightly modify our simulation to the following:
 
@@ -287,8 +284,6 @@ print(np.percentile(proj_record,95))
 ---
 
 When we see "correlated tasks", we probably first think of correlation of coefficients. However, the number of correlation coefficients increases exponentially as the number of tasks increases, just like the possible combination of tasks (you can learn more about [combinations](https://www.khanacademy.org/math/precalculus/x9e81a4f98389efdf:prob-comb/x9e81a4f98389efdf:combinations/v/combination-formula) and [permutations](https://www.khanacademy.org/math/precalculus/x9e81a4f98389efdf:prob-comb/x9e81a4f98389efdf:combinatorics-precalc/v/permutation-formula) on Khan Academy), not to mention the amount of work that has to go into deciding the relationships between those tasks. At the same time, correlation coefficients are mathematical concepts which do not carry the most meaningful real-world interpretations, especially when a project manager tries to understand why the correlation in risks exists or how it could be managed. Therefore, more frequently, we would specify a risk event that could potentially impact multiple tasks and the probability of that risk event; we could also specify a risk factor, which would again affect multiple tasks. For now, let's go back to the assumption that the three tasks are sequential, as in Scenario One.
-
-![Sequential Tasks](nb0003_images/p03_01.png)
 
 In this scenario, the weather would have an impact on all three tasks, while internal communication would affect only Tasks 2 and 3. Let's say that there is a 40% chance of bad weather, in which case the project is going to be delayed for 2 days. On the other hand, the communication factor varies in a way that is similar to a normal distribution, with a mean of 1 and a standard deviation of 0.1. When the communication between team members is efficient, the communication factor is smaller than 1 and reduces the project completion time; otherwise it is larger than 1 and increases the completion time. By modeling the probability of risk events and factors, we arrive at the following equation:
 
