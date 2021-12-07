@@ -34,6 +34,7 @@ bgColor = "#fff"
 landscapePhotoWidths = [900, 800, 700, 600, 500]
 portraitPhotoWidths = [800, 700, 600, 500]
 lqipWidth = "20x"
+smallLimit = "300"
 
 # Footer
 footer = "Created and maintained by the <a href=\"https://www.sauder.ubc.ca/programs/masters-degrees/mban\">Master of Business Analytics</a> Community."

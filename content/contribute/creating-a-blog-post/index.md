@@ -26,8 +26,6 @@ Make sure you have the project on your local computer and have the dependencies 
 
 Run this command to create a new folder in the directory `/content/blog/<your-blog-title>`. Make sure to include a blog title in kebab-case.
 
-{{< btn-copy text="npm run create:blog your-blog-title" >}}
-
 ```bash
 npm run create:blog your-blog-title
 ```

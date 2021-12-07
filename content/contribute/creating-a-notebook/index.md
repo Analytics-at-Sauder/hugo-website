@@ -26,8 +26,6 @@ Make sure you have the project on your local computer and have the dependencies 
 
 Run this command to create a new folder in the directory `/content/notebooks/<your-notebook-name>`. Make sure to include a notebook name in kebab-case.
 
-{{< btn-copy text="npm run create:notebook your-notebook-name" >}}
-
 ```bash
 npm run create:notebook your-notebook-name
 ```
