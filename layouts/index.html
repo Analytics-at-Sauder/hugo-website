@@ -95,7 +95,7 @@
     {{ range first 3 (where .Site.RegularPages.ByDate.Reverse "Section" "notebooks") -}}
     <div class="shadow-sm px-3 py-3 rounded card mt-2">
       <div class="d-flex flex-wrap">
-        <a class="me-2" href="${notebook.permalink}">
+        <a class="me-2" href="{{ .RelPermalink }}">
           <h5 class="my-0">{{ .Params.title }}</h5>
         </a>
         <span>
