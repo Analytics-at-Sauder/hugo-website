@@ -34,7 +34,7 @@ After running this command, you should see a folder created along with an index.
 
 ![png](folder-structure.png)
 
-### Step 2 - Download your Jypter Notebook
+### Step 2 - Download your Juypter Notebook
 
 Go to your Jupyter Notebook and navigate through the menu File -> Download as -> Markdown (.md)
 
