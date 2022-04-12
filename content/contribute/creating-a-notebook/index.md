@@ -34,7 +34,7 @@ After running this command, you should see a folder created along with an index.
 
 ![png](folder-structure.png)
 
-### Step 2 - Download your Jypter Notebook
+### Step 2 - Download your Jupyter Notebook
 
 Go to your Jupyter Notebook and navigate through the menu File -> Download as -> Markdown (.md)
 
@@ -62,7 +62,7 @@ Create a new branch on github and push to it. Open a pull request so that other 
 
 ## By uploading your files to github directly
 
-### Step 1 - Download your Jypter Notebook
+### Step 1 - Download your Jupyter Notebook
 
 Go to your Jupyter Notebook and navigate through the menu File -> Download as -> Markdown (.md)
 
