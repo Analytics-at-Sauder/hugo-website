@@ -3,3 +3,11 @@
   border-image-source: linear-gradient(90deg, #319b42 50%, #00053e);
   border-image-slice: 1;
 }
+
+.suggestion__title {
+  text-align: left;
+}
+
+.docs-content {
+  overflow-x: scroll;
+}

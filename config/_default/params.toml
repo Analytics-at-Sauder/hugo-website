@@ -6,7 +6,10 @@ titleSeparator = "-"
 titleAddition = "UBC Business Analytics Learning Resource"
 description = "The objective of this Project is to curate a collection of open-source business analytics tools and resources, to promote opportunities for hands-on learning, to foster an online, academic community of business analytics, and to facilitate conversations around data analytics within a broader business context. "
 
-## Open Graph + Twitter Cards
+## Documentation
+# docsVersion = "0.3"
+
+## Open Graph
 images = ["doks.png"]
 twitterSite = "universityofbc"
 twitterCreator = "universityofbc"
@@ -44,16 +47,29 @@ alert = false
 alertText = "Like Doks? <a class=\"alert-link\" href=\"https://github.com/h-enk/doks/stargazers\">Star on GitHub</a>. Thanks!</a>"
 
 # Edit Page
+# repoHost [Github | Gitea | GitLab | Bitbucket | BitbucketServer ] is used for building the edit link based on git hoster
+repoHost = "GitHub"
 docsRepo = "https://github.com/Analytics-at-Sauder/hugo-website"
+docsRepoBranch = "main"
+docsRepoSubPath = ""
 editPage = true
+lastMod = true
 
 [options]
   lazySizes = true
   clipBoard = true
   instantPage = true
   flexSearch = true
-  darkMode = false
+  darkMode = true
   bootStrapJs = true
   breadCrumb = true
   highLight = true
   kaTex = true
+  multilingualMode = false
+  docsVersioning = false
+  fullWidth = false
+
+[menu]
+  [menu.section]
+    auto = false
+    collapsibleSidebar = false

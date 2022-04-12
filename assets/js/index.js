@@ -94,7 +94,7 @@ Source:
 
   // https://discourse.gohugo.io/t/range-length-or-last-element/3803/2
 
-  {{ $list := (where .Site.Pages "Section" "docs") -}}
+  {{ $list := (.Site.Pages) -}}
   {{ $len := (len $list) -}}
 
   index.add(
@@ -106,7 +106,7 @@ Source:
         {{ with .Description -}}
           description: {{ . | jsonify }},
         {{ else -}}
-          description: {{ .Summary | plainify | jsonify }},
+          description: "",
         {{ end -}}
         content: {{ .Plain | jsonify }}
       })

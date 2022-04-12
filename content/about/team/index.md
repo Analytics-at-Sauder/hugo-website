@@ -1,6 +1,6 @@
 ---
 title: "Meet the team"
-description: ""
+description: "Meet the team behind Analytics at Sauder!"
 date: 2021-04-15T00:02:08-07:00
 lastmod: 2021-04-15T00:02:08-07:00
 draft: false
@@ -14,8 +14,8 @@ toc: false
 
 <div class="container-fluid">
   <div class="row mt-4">
-    <div class="col-md-3 align-items-center d-flex">
-      {{< img-simple src="about_kem_ananaba.jpeg" alt="Square" class="border-0 rounded-circle">}}
+    <div class="col-md-3 align-items-center d-flex p-0">
+      <img class="img-fluid lazyload blur-up" src="about_kem_ananaba.jpeg" data-src="about_kem_ananaba.jpeg" />
     </div>
     <div class="col-md-13">
       <h2 class="mt-0">Kemjika Ananaba</h2>
@@ -26,8 +26,8 @@ toc: false
 
 <div class="container-fluid">
   <div class="row mt-4">
-    <div class="col-md-3 align-items-center d-flex">
-      {{< img-simple src="about_hao_zheng.jpeg" alt="Square" class="border-0 rounded-circle">}}
+    <div class="col-md-3 align-items-center d-flex p-0">
+      <img class="img-fluid lazyload blur-up" src="about_hao_zheng.jpeg" data-src="about_hao_zheng.jpeg" />
     </div>
     <div class="col-md-13">
       <h2 class="mt-0">Hao Zheng</h2>
@@ -38,8 +38,8 @@ toc: false
 
 <div class="container-fluid">
   <div class="row mt-4">
-    <div class="col-md-3 align-items-center d-flex">
-      {{< img-simple src="about_charlie_cao.jpeg" alt="Square" class="border-0 rounded-circle">}}
+    <div class="col-md-3 align-items-center d-flex p-0">
+      <img class="img-fluid lazyload blur-up" src="about_charlie_cao.jpeg" data-src="about_charlie_cao.jpeg" />
     </div>
     <div class="col-md-13">
       <h2 class="mt-0">Charlie Cao</h2>
@@ -50,8 +50,8 @@ toc: false
 
 <div class="container-fluid">
   <div class="row mt-4">
-    <div class="col-md-3 align-items-center d-flex">
-      {{< img-simple src="about_vibhuti_dhingra.jpg" alt="Square" class="border-0 rounded-circle">}}
+    <div class="col-md-3 align-items-center d-flex p-0">
+      <img class="img-fluid lazyload blur-up" src="about_vibhuti_dhingra.jpg" data-src="about_vibhuti_dhingra.jpg" />
     </div>
     <div class="col-md-13">
       <h2 class="mt-0">Vibhuti Dhingra</h2>
@@ -62,8 +62,8 @@ toc: false
 
 <div class="container-fluid">
   <div class="row mt-4">
-    <div class="col-md-3 align-items-center d-flex">
-      {{< img-simple src="about_alison_myers.jpg" alt="Square" class="border-0 rounded-circle">}}
+    <div class="col-md-3 align-items-center d-flex p-0">
+      <img class="img-fluid lazyload blur-up" src="about_alison_myers.jpg" data-src="about_alison_myers.jpg" />
     </div>
     <div class="col-md-13">
       <h2 class="mt-0">Alison Myers</h2>
@@ -74,8 +74,8 @@ toc: false
 
 <div class="container-fluid">
   <div class="row mt-4">
-    <div class="col-md-3 align-items-center d-flex">
-      {{< img-simple src="about_sunah_cho.jpg" alt="Square" class="border-0 rounded-circle">}}
+    <div class="col-md-3 align-items-center d-flex p-0">
+      <img class="img-fluid lazyload blur-up" src="about_sunah_cho.jpg" data-src="about_sunah_cho.jpg" />
     </div>
     <div class="col-md-13">
       <h2 class="mt-0">Sunah Cho</h2>
@@ -86,8 +86,8 @@ toc: false
 
 <div class="container-fluid">
   <div class="row mt-4">
-    <div class="col-md-3 align-items-center d-flex">
-      {{< img-simple src="about_elisabeth_chin.jpeg" alt="Square" class="border-0 rounded-circle">}}
+    <div class="col-md-3 align-items-center d-flex p-0">
+      <img class="img-fluid lazyload blur-up" src="about_elisabeth_chin.jpeg" data-src="about_elisabeth_chin.jpeg" />
     </div>
     <div class="col-md-13">
       <h2 class="mt-0">Elisabeth Chin</h2>
@@ -98,8 +98,8 @@ toc: false
 
 <div class="container-fluid">
   <div class="row mt-4">
-    <div class="col-md-3 align-items-center d-flex">
-      {{< img-simple src="about_harish_krishnan.jpg" alt="Square" class="border-0 rounded-circle">}}
+    <div class="col-md-3 align-items-center d-flex p-0">
+      <img class="img-fluid lazyload blur-up" src="about_harish_krishnan.jpg" data-src="about_harish_krishnan.jpg" />
     </div>
     <div class="col-md-13">
       <h2 class="mt-0">Harish Krishnan</h2>

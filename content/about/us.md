@@ -1,6 +1,6 @@
 ---
 title: "About Us"
-description: ""
+description: "About analytics at Sauder"
 date: 2021-04-15T00:02:08-07:00
 lastmod: 2021-04-15T00:02:08-07:00
 draft: false
