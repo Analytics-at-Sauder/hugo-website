@@ -1,7 +1,7 @@
 ---
 title: "First blog post"
 description: "To be filled in"
-lead: "By Harish"
+lead: "by Harish"
 date: 2022-04-21T09:19:42+01:00
 lastmod: 2022-04-21T09:19:42+01:00
 draft: false
