@@ -6,7 +6,20 @@ weight = 20
 [[main]]
 name = "About"
 url = "/about/us"
+identifier="about"
 weight = 30
+
+[[main]]
+name = "About Us"
+weight = 31
+url = "/about/team/"
+parent = "about"
+
+[[main]]
+name = "Meet the team"
+weight = 32
+url = "/about/team/"
+parent = "about"
 
 [[main]]
 name = "Blog"
@@ -19,9 +32,21 @@ url = "/resources/list/"
 weight = 45
 
 [[main]]
-name = "Contribute"
-url = "/contribute/how-to-contribute/"
+name = "Get Involved"
+identifier="get-involved"
 weight = 50
+
+[[main]]
+name = "Contribute"
+weight = 31
+url = "/contribute/how-to-contribute/"
+parent="get-involved"
+
+[[main]]
+name = "Contact Us"
+weight = 32
+url = "/contribute/contact"
+parent ="get-involved"
 
 [[main]]
 name = "Community"
