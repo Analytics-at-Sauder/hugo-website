@@ -32,12 +32,12 @@ url = "/resources/list/"
 weight = 45
 
 [[main]]
-name = "Get Involved"
+name = "Contribute"
 identifier="get-involved"
 weight = 50
 
 [[main]]
-name = "Contribute"
+name = "Get Involved"
 weight = 31
 url = "/contribute/how-to-contribute/"
 parent="get-involved"
